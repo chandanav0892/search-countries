@@ -1,32 +1,31 @@
-.CountryApp {
-  max-width: 800px;
-  margin: 0 auto;
+.App {
+  text-align: center;
   padding: 20px;
 }
 
 input[type="text"] {
-  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  width: 300px;
 }
 
-.countryList {
+.countryContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .countryCard {
-  width: calc(14.2857% - 20px); /* Adjusted width for 7 cards per row */
+  width: calc(100% / 7);
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
 }
 
 .countryCard img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.countryCard h2 {
+  margin-top: 10px;
+  font-size: 16px;
 }
